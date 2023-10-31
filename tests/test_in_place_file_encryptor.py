@@ -5,6 +5,7 @@ import pytest
 from ransomware_payload.bit_manipulators import flip_bits
 from ransomware_payload.in_place_file_encryptor import InPlaceFileEncryptor
 from ransomware_payload.typedef import FileEncryptorCallable
+from monkeytypes import FileExtension
 from tests.ransomware_target_files import (
     ALL_ZEROS_PDF,
     ALL_ZEROS_PDF_CLEARTEXT_SHA256,
@@ -14,8 +15,6 @@ from tests.ransomware_target_files import (
     TEST_KEYBOARD_TXT_ENCRYPTED_SHA256,
 )
 from tests.utils import get_file_sha256_hash
-
-from common.types import FileExtension
 
 EXTENSION = FileExtension(".m0nk3y")
 
