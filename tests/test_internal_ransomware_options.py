@@ -7,11 +7,9 @@ from ransomware_payload.internal_ransomware_options import (
     InternalRansomwareOptions,
 )
 from ransomware_payload.ransomware_options import RansomwareOptions
-from monkeytoolbox import get_os
+from monkeytoolbox import InvalidPath, get_os
 from monkeytypes import OperatingSystem
 from tests.utils import raise_
-
-from common.utils.file_utils import InvalidPath
 
 LINUX_DIR = "/tmp/test"
 WINDOWS_DIR = "C:\\tmp\\test"
